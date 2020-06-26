@@ -1,6 +1,8 @@
 package com.company;
 
 import com.company.algorithms.BubbleSort;
+import com.company.algorithms.InsertionSort;
+import com.company.algorithms.MergeSort;
 import com.company.algorithms.SelectSort;
 
 import java.util.Random;
@@ -34,6 +36,14 @@ public class Main {
 
         System.out.println("SELECT SORT");
         SelectSort.sort(arrayToSort);
+        Main.printArray(arrayToSort);
+
+        System.out.println("INSERTION SORT");
+        InsertionSort.sort(arrayToSort);
+        Main.printArray(arrayToSort);
+
+        System.out.println("MERGE SORT");
+        MergeSort.sort(arrayToSort);
         Main.printArray(arrayToSort);
     }
 }

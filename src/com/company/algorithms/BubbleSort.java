@@ -6,14 +6,16 @@ public class BubbleSort {
         int arrayLength = arrayToSort.length;
         int iterator = 0;
         boolean swapped = true;
-        while (iterator < arrayLength - 1 && swapped) {
+
+        while (iterator < arrayLength && swapped) {
             swapped = false;
-            for (int j = 0; j < arrayLength - 1 - iterator; j++) {
-                if (arrayToSort[j] > arrayToSort[j + 1]) {
-                    SortUtils.swap(arrayToSort, j, j + 1);
+            for (int i = 0; i < arrayLength - 1 - iterator; i++) {
+                if (arrayToSort[i] > arrayToSort[i + 1]) {
+                    SortUtils.swap(arrayToSort, i, i + 1);
                     swapped = true;
                 }
             }
+            iterator++;
         }
     }
 
