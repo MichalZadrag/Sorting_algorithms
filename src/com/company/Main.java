@@ -46,5 +46,9 @@ public class Main {
         System.out.println("HEAP SORT");
         HeapSort.sort(arrayToSort);
         Main.printArray(arrayToSort);
+
+        System.out.println("QUICK SORT");
+        QuickSort.sort(arrayToSort);
+        Main.printArray(arrayToSort);
     }
 }
